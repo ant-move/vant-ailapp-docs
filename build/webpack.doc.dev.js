@@ -6,11 +6,11 @@ const { VueLoaderPlugin } = require('vue-loader');
 module.exports = {
   mode: 'development',
   entry: {
-    'vant-docs': './docs/src/index.js',
-    'vant-preview': './docs/src/preview.js'
+    'vant-docs': './doc/src/index.js',
+    'vant-preview': './doc/src/preview.js'
   },
   output: {
-    path: path.join(__dirname, '../docs/dist'),
+    path: path.join(__dirname, '../docs/'),
     publicPath: '/',
     chunkFilename: 'async_[name].js'
   },
@@ -75,13 +75,13 @@ module.exports = {
     new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
       chunks: ['vant-docs'],
-      template: 'docs/src/index.tpl',
+      template: 'doc/src/index.tpl',
       filename: 'index.html',
       inject: true
     }),
     new HtmlWebpackPlugin({
       chunks: ['vant-preview'],
-      template: 'docs/src/index.tpl',
+      template: 'doc/src/index.tpl',
       filename: 'preview.html',
       inject: true
     })
