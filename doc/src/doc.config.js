@@ -18,7 +18,7 @@ export default {
       logoLink: [
         {
           image: 'https://ant-move.github.io/website/img/favicon.ico',
-          url: '/Antmove'
+          url: 'https://ant-move.github.io/website/'
         },
         {
           image: 'https://img.yzcdn.cn/vant/logo/github.svg',
