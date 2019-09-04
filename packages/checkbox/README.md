@@ -18,7 +18,7 @@
 通过`value`绑定 checkbox 的勾选状态
 
 ```html
-<van-checkbox value="{{ checked }}" bind:change="onChange">复选框</van-checkbox>
+<van-checkbox value="{{ checked }}" onChange="onChange">复选框</van-checkbox>
 ```
 
 ```js
@@ -41,7 +41,7 @@ Page({
 <van-checkbox
   disabled
   value="{{ checked }}"
-  bind:change="onChange"
+  onChange="onChange"
 >
   复选框
 </van-checkbox>
@@ -53,7 +53,7 @@ Page({
 <van-checkbox
   value="{{ checked }}"
   checked-color="#07c160"
-  bind:change="onChange"
+  onChange="onChange"
 >
   复选框
 </van-checkbox>
@@ -64,7 +64,7 @@ Page({
 通过 icon 插槽自定义图标
 
 ```html
-<van-checkbox use-icon-slot value="{{ checked }}" bind:change="onChange">
+<van-checkbox use-icon-slot value="{{ checked }}" onChange="onChange">
   自定义图标
   <image
     slot="icon"
@@ -96,7 +96,7 @@ Page({
 需要与`van-checkbox-group`一起使用，选中值是一个数组，通过`value`绑定在`van-checkbox-group`上，数组中的项即为选中的`Checkbox`的`name`属性设置的值
 
 ```html
-<van-checkbox-group value="{{ result }}" bind:change="onChange">
+<van-checkbox-group value="{{ result }}" onChange="onChange">
   <van-checkbox
     wx:for="{{ list }}"
     wx:key="index"
@@ -125,7 +125,7 @@ Page({
 ### 设置最大可选数
 
 ```html
-<van-checkbox-group value="{{ result }}" bind:change="onChange" max="{{ 2 }}">
+<van-checkbox-group value="{{ result }}" onChange="onChange" max="{{ 2 }}">
   <van-checkbox
     wx:for="{{ list }}"
     wx:key="index"
@@ -141,7 +141,7 @@ Page({
 此时你需要再引入`Cell`和`CellGroup`组件，并通过 checkbox 的 toggle 方法手动触发切换
 
 ```html
-<van-checkbox-group value="{{ result }}" bind:change="onChange">
+<van-checkbox-group value="{{ result }}" onChange="onChange">
   <van-cell-group >
     <van-cell
       wx:for="{{ list }}"
@@ -150,7 +150,7 @@ Page({
       value-class="value-class"
       clickable
       data-index="{{ index }}"
-      bind:click="toggle"
+      onClick="toggle"
     >
       <van-checkbox catch:tap="noop" class="checkboxes-{{ index }}" name="{{ item }}" />
     </van-cell>
@@ -214,7 +214,7 @@ Page({
 
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:change | 当绑定值变化时触发的事件 | 当前组件的值 |
+| onChange | 当绑定值变化时触发的事件 | 当前组件的值 |
 
 ### Checkbox 外部样式类
 
@@ -228,7 +228,7 @@ Page({
 
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:change | 当绑定值变化时触发的事件 | 当前组件的值 |
+| onChange | 当绑定值变化时触发的事件 | 当前组件的值 |
 
 ### Checkbox Slot
 

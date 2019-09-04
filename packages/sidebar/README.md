@@ -18,7 +18,7 @@
 通过在`van-sidebar`上设置`active`属性来控制选中项
 
 ```html
-<van-sidebar active="{{ active }}" bind:change="onChange">
+<van-sidebar active="{{ active }}" onChange="onChange">
   <van-sidebar-item title="标签名称" />
   <van-sidebar-item title="标签名称" />
   <van-sidebar-item title="标签名称" />

@@ -21,21 +21,21 @@
   <van-goods-action-icon
     icon="chat-o"
     text="客服"
-    bind:click="onClickIcon"
+    onClick="onClickIcon"
   />
   <van-goods-action-icon
     icon="cart-o"
     text="购物车"
-    bind:click="onClickIcon"
+    onClick="onClickIcon"
   />
   <van-goods-action-button
     text="加入购物车"
     type="warning"
-    bind:click="onClickButton"
+    onClick="onClickButton"
   />
   <van-goods-action-button
     text="立即购买"
-    bind:click="onClickButton"
+    onClick="onClickButton"
   />
 </van-goods-action>
 ```

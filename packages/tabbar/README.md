@@ -15,7 +15,7 @@
 ### 基础用法
 
 ```html
-<van-tabbar active="{{ active }}" bind:change="onChange">
+<van-tabbar active="{{ active }}" onChange="onChange">
   <van-tabbar-item icon="home-o">标签</van-tabbar-item>
   <van-tabbar-item icon="search">标签</van-tabbar-item>
   <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
@@ -40,7 +40,7 @@ Page({
 在标签指定`name`属性的情况下，`v-model`的值为当前标签的`name`
 
 ```html
-<van-tabbar active="{{ active }}" bind:change="onChange">
+<van-tabbar active="{{ active }}" onChange="onChange">
   <van-tabbar-item name="home" icon="home-o">标签</van-tabbar-item>
   <van-tabbar-item name="search" icon="search">标签</van-tabbar-item>
   <van-tabbar-item name="friends" icon="friends-o">标签</van-tabbar-item>
@@ -62,7 +62,7 @@ Page({
 ### 显示徽标
 
 ```html
-<van-tabbar active="{{ active }}" bind:change="onChange">
+<van-tabbar active="{{ active }}" onChange="onChange">
   <van-tabbar-item icon="home-o">标签</van-tabbar-item>
   <van-tabbar-item icon="search" dot>标签</van-tabbar-item>
   <van-tabbar-item icon="friends-o" info="5">标签</van-tabbar-item>
@@ -75,7 +75,7 @@ Page({
 可以通过 slot 自定义图标，其中 icon slot 代表未选中状态下的图标，icon-active slot 代表选中状态下的图标
 
 ```html
-<van-tabbar active="{{ active }}" bind:change="onChange">
+<van-tabbar active="{{ active }}" onChange="onChange">
   <van-tabbar-item info="3">
     <image
       slot="icon"
@@ -117,7 +117,7 @@ Page({
   active="{{ active }}"
   active-color="#07c160"
   inactive-color="#000"
-  bind:change="onChange"
+  onChange="onChange"
 >
   <van-tabbar-item icon="home-o">标签</van-tabbar-item>
   <van-tabbar-item icon="search">标签</van-tabbar-item>
@@ -158,7 +158,7 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:change | 切换标签时触发 | event.detail: 当前选中标签的名称或索引值 |
+| onChange | 切换标签时触发 | event.detail: 当前选中标签的名称或索引值 |
 
 ### TabbarItem API
 

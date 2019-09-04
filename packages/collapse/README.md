@@ -17,7 +17,7 @@
 通过`value`控制展开的面板列表，`activeNames`为数组格式
 
 ```html
-<van-collapse value="{{ activeNames }}" bind:change="onChange">
+<van-collapse value="{{ activeNames }}" onChange="onChange">
   <van-collapse-item title="有赞微商城" name="1">
     提供多样店铺模板，快速搭建网上商城
   </van-collapse-item>
@@ -48,7 +48,7 @@ Page({
 通过`accordion`可以设置为手风琴模式，最多展开一个面板，此时`activeName`为字符串格式
 
 ```html
-<van-collapse value="{{ activeName }}" bind:change="onChange" accordion>
+<van-collapse value="{{ activeName }}" onChange="onChange" accordion>
   <van-collapse-item title="有赞微商城" name="1">
     提供多样店铺模板，快速搭建网上商城
   </van-collapse-item>
@@ -77,7 +77,7 @@ Page({
 ### 自定义标题内容
 
 ```html
-<van-collapse value="{{ activeNames }}" bind:change="onChange">
+<van-collapse value="{{ activeNames }}" onChange="onChange">
   <van-collapse-item name="1">
     <view slot="title">有赞微商城<van-icon name="question-o" /></view>
     提供多样店铺模板，快速搭建网上商城

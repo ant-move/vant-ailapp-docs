@@ -4,7 +4,6 @@
     :config="config"
     :github="github"
     :versions="versions"
-    :simulator="simulator"
   >
     <router-view />
   </van-doc>

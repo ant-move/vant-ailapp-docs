@@ -29,8 +29,8 @@
   value="{{ value }}"
   placeholder="请输入搜索关键词"
   show-action
-  bind:search="onSearch"
-  bind:cancel="onCancel"
+  onSearch="onSearch"
+  onCancel="onCancel"
 />
 ```
 
@@ -43,7 +43,7 @@
   value="{{ value }}"
   placeholder="请输入搜索关键词"
   use-action-slot
-  bind:search="onSearch"
+  onSearch="onSearch"
 >
   <view slot="action" bind:tap="onSearch">搜索</view>
 </van-search>
@@ -74,12 +74,12 @@
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:search | 确定搜索时触发 | event.detail: 当前输入值 |
-| bind:change | 输入内容变化时触发 | event.detail: 当前输入值 |
-| bind:cancel | 取消搜索搜索时触发 | - |
+| onSearch | 确定搜索时触发 | event.detail: 当前输入值 |
+| onChange | 输入内容变化时触发 | event.detail: 当前输入值 |
+| onCancel | 取消搜索搜索时触发 | - |
 | bind:focus | 输入框聚焦时触发 | - |
 | bind:blur | 输入框失焦时触发 | - |
-| bind:clear | 点击清空控件时触发 | - |
+| onClear | 点击清空控件时触发 | - |
 
 ### Slot
 

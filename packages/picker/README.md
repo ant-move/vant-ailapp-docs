@@ -18,7 +18,7 @@
 ### 基础用法
 
 ```html
-<van-picker columns="{{ columns }}" bind:change="onChange" />
+<van-picker columns="{{ columns }}" onChange="onChange" />
 ```
 
 ```javascript
@@ -44,7 +44,7 @@ Page({
 <van-picker
   columns="{{ columns }}"
   default-index="{{ 2 }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -55,8 +55,8 @@ Page({
   show-toolbar
   title="标题"
   columns="{{ columns }}"
-  bind:cancel="onCancel"
-  bind:confirm="onConfirm"
+  onCancel="onCancel"
+  onConfirm="onConfirm"
 />
 ```
 
@@ -102,7 +102,7 @@ Page({
 ### 多列联动
 
 ```html
-<van-picker columns="{{ columns }}" bind:change="onChange" />
+<van-picker columns="{{ columns }}" onChange="onChange" />
 ```
 
 ```javascript

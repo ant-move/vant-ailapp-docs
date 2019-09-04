@@ -17,7 +17,7 @@
 <van-switch-cell
   title="标题"
   checked="{{ checked }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -42,7 +42,7 @@ Page({
   disabled
   title="标题"
   checked="{{ checked }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -54,7 +54,7 @@ Page({
   loading
   title="标题"
   checked="{{ checked }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -80,7 +80,7 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:change | 开关状态切换回调 | event.detail: 是否选中开关 |
+| onChange | 开关状态切换回调 | event.detail: 是否选中开关 |
 
 ### Slot
 

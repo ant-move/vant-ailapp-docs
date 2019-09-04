@@ -17,7 +17,7 @@
 <van-submit-bar
   price="{{ 3050 }}"
   button-text="提交订单"
-  bind:submit="onSubmit"
+  onSubmit="onSubmit"
 />
 ```
 
@@ -31,7 +31,7 @@
   button-text="提交订单"
   tip="您的收货地址不支持同城送, 我们已为您推荐快递"
   tip-icon="https://img.yzcdn.cn/1.png"
-  bind:submit="onSubmit"
+  onSubmit="onSubmit"
 />
 ```
 
@@ -43,7 +43,7 @@
   loading
   price="{{ 3050 }}"
   button-text="提交订单"
-  bind:submit="onSubmit"
+  onSubmit="onSubmit"
 />
 ```
 
@@ -54,7 +54,7 @@
 <van-submit-bar
   price="{{ 3050 }}"
   button-text="提交订单"
-  bind:submit="onClickButton"
+  onSubmit="onClickButton"
   tip="{{ true }}"
 >
   <van-tag type="primary">标签</van-tag>

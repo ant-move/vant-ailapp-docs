@@ -17,7 +17,7 @@
 默认情况下启用第一个标签，可以通过`active`设定当前激活的标签索引，在回调参数的`event.detail`中可以取得被点击标签的标题和索引
 
 ```html
-<van-tabs active="{{ active }}" bind:change="onChange">
+<van-tabs active="{{ active }}" onChange="onChange">
   <van-tab title="标签 1">内容 1</van-tab>
   <van-tab title="标签 2">内容 2</van-tab>
   <van-tab title="标签 3">内容 3</van-tab>
@@ -95,7 +95,7 @@ Page({
 可以在`van-tabs`上绑定`click`事件，在回调参数的`event.detail`中可以取得被点击标签的标题和索引
 
 ```html
-<van-tabs bind:click="onClick">
+<van-tabs onClick="onClick">
   <van-tab title="标签 1">内容 1</van-tab>
   <van-tab title="标签 2">内容 2</van-tab>
 </van-tabs>
@@ -194,8 +194,8 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:click | 点击标签时触发 | index：标签索引，title：标题 |
-| bind:change | 当前激活的标签改变时触发 | index：标签索引，title：标题 |
+| onClick | 点击标签时触发 | index：标签索引，title：标题 |
+| onChange | 当前激活的标签改变时触发 | index：标签索引，title：标题 |
 | bind:disabled | 点击被禁用的标签时触发 | index：标签索引，title：标题 |
 | bind:scroll | 滚动时触发 | { scrollTop: 距离顶部位置, isFixed: 是否吸顶 } |
 

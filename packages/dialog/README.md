@@ -88,8 +88,8 @@ Dialog.confirm({
   show="{{ show }}"
   show-cancel-button
   confirm-button-open-type="getUserInfo"
-  bind:close="onClose"
-  bind:getuserinfo="getUserInfo"
+  onClose="onClose"
+  onGetuserinfo="getUserInfo"
 >
   <image src="https://img.yzcdn.cn/1.jpg" />
 </van-dialog>
@@ -206,11 +206,11 @@ Page({
 
 | 事件 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:close | 弹窗关闭时触发 | event.detail: 触发关闭事件的来源，<br>枚举为`confirm`,`cancel`,`overlay` |
-| bind:confirm | 点击确认按钮时触发 | - |
-| bind:cancel | 点击取消按钮时触发 | - |
-| bind:getuserinfo | 点击确认按钮时，会返回获取到的用户信息，<br>从返回参数的 detail 中获取到的值同 wx.getUserInfo | - |
-| bind:contact | 客服消息回调 | - |
-| bind:getphonenumber | 获取用户手机号回调 | - |
-| bind:error | 当使用开放能力时，发生错误的回调 | - |
-| bind:opensetting | 在打开授权设置页后回调 | - |
+| onClose | 弹窗关闭时触发 | event.detail: 触发关闭事件的来源，<br>枚举为`confirm`,`cancel`,`overlay` |
+| onConfirm | 点击确认按钮时触发 | - |
+| onCancel | 点击取消按钮时触发 | - |
+| onGetuserinfo | 点击确认按钮时，会返回获取到的用户信息，<br>从返回参数的 detail 中获取到的值同 wx.getUserInfo | - |
+| onContact | 客服消息回调 | - |
+| onGetphonenumber | 获取用户手机号回调 | - |
+| onError | 当使用开放能力时，发生错误的回调 | - |
+| onOpensetting | 在打开授权设置页后回调 | - |

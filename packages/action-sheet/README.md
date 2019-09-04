@@ -20,8 +20,8 @@
 <van-action-sheet
   show="{{ show }}"
   actions="{{ actions }}"
-  bind:close="onClose"
-  bind:select="onSelect"
+  onClose="onClose"
+  onSelect="onSelect"
 />
 ```
 
@@ -67,7 +67,7 @@ Page({
   show="{{ show }}"
   actions="{{ actions }}"
   cancel-text="取消"
-  bind:close="onClose"
+  onClose="onClose"
 />
 ```
 
@@ -97,9 +97,9 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:select | 选中选项时触发，禁用或加载状态下不会触发 | event.detail: 选项对应的对象 |
-| bind:close | 关闭时触发 | - |
-| bind:cancel | 取消按钮点击时触发 | - |
+| onSelect | 选中选项时触发，禁用或加载状态下不会触发 | event.detail: 选项对应的对象 |
+| onClose | 关闭时触发 | - |
+| onCancel | 取消按钮点击时触发 | - |
 
 ### actions
 
@@ -112,4 +112,4 @@ Page({
 | loading | 是否为加载状态 |
 | disabled | 是否为禁用状态 |
 | className | 为对应列添加额外的 class 类名 |
-| openType | 微信开放能力，具体支持可参考 [微信官方文档](https://mp.weixin.qq.com/debug/wxadoc/dev/component/button.html) |
+| openType | 开放能力 |

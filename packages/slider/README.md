@@ -12,7 +12,7 @@
 ### 基本用法
 
 ```html
-<van-slider value="50" bind:change="onChange" />
+<van-slider value="50" onChange="onChange" />
 ```
 
 ```js
@@ -100,7 +100,7 @@ Page({
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
 | bind:drag | 拖动进度条时触发 | event.detail.value: 当前进度 |
-| bind:change | 进度值改变后触发 | event.detail: 当前进度 |
+| onChange | 进度值改变后触发 | event.detail: 当前进度 |
 
 ### 外部样式类
 

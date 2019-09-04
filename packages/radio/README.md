@@ -18,7 +18,7 @@
 通过`value`绑定值当前选中项的 name
 
 ```html
-<van-radio-group value="{{ radio }}" bind:change="onChange">
+<van-radio-group value="{{ radio }}" onChange="onChange">
   <van-radio name="1">单选框 1</van-radio>
   <van-radio name="2">单选框 2</van-radio>
 </van-radio-group>
@@ -43,7 +43,7 @@ Page({
 通过`disabled`属性禁止选项切换，在`van-radio`上设置`diabled`可以禁用单个选项
 
 ```html
-<van-radio-group value="{{ radio }}" bind:change="onChange" disabled>
+<van-radio-group value="{{ radio }}" onChange="onChange" disabled>
   <van-radio name="1">单选框 1</van-radio>
   <van-radio name="2">单选框 2</van-radio>
 </van-radio-group>
@@ -60,7 +60,7 @@ Page({
 通过 icon 插槽自定义图标
 
 ```html
-<van-checkbox use-icon-slot value="{{ radio }}" name="1" bind:change="onChange">
+<van-checkbox use-icon-slot value="{{ radio }}" name="1" onChange="onChange">
   自定义图标
   <image
     slot="icon"
@@ -92,14 +92,14 @@ Page({
 此时你需要再引入`Cell`和`CellGroup`组件。
 
 ```html
-<van-radio-group value="{{ radio }}" bind:change="onChange">
+<van-radio-group value="{{ radio }}" onChange="onChange">
   <van-cell-group>
     <van-cell
       title="单选框 1"
       value-class="value-class"
       clickable
       data-name="1"
-      bind:click="onClick"
+      onClick="onClick"
     >
       <van-radio name="1" />
     </van-cell>
@@ -108,7 +108,7 @@ Page({
       value-class="value-class"
       clickable
       data-name="2"
-      bind:click="onClick"
+      onClick="onClick"
     >
       <van-radio name="2" />
     </van-cell>
@@ -160,7 +160,7 @@ Page({
 
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:change | 当绑定值变化时触发的事件 | 当前选中项的 name |
+| onChange | 当绑定值变化时触发的事件 | 当前选中项的 name |
 
 ### Radio 外部样式类
 
@@ -182,4 +182,4 @@ Page({
 
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:change | 当绑定值变化时触发的事件 | 当前选中项的 name |
+| onChange | 当绑定值变化时触发的事件 | 当前选中项的 name |

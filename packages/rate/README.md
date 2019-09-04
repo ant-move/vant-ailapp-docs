@@ -13,7 +13,7 @@
 ### 基础用法
 
 ```html
-<van-rate value="{{ value }}" bind:change="onChange" />
+<van-rate value="{{ value }}" onChange="onChange" />
 ```
 
 ```javascript
@@ -37,7 +37,7 @@ Page({
   value="{{ value }}"
   icon="like"
   void-icon="like-o"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -50,7 +50,7 @@ Page({
   color="#f44"
   void-color="#eee"
   void-icon="star"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -63,7 +63,7 @@ Page({
   color="#f44"
   void-color="#eee"
   void-icon="star"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -73,7 +73,7 @@ Page({
 <van-rate
   value="{{ value }}"
   count="{{ 6 }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -83,7 +83,7 @@ Page({
 <van-rate
   disabled
   value="{{ value }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -93,7 +93,7 @@ Page({
 <van-rate
   readonly
   value="{{ value }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 

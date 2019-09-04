@@ -21,8 +21,8 @@
   items="{{ items }}"
   main-active-index="{{ mainActiveIndex }}"
   active-id="{{ activeId }}"
-  bind:click-nav="onClickNav"
-  bind:click-item="onClickItem"
+  onClick-nav="onClickNav"
+  onClick-item="onClickItem"
 />
 ```
 
@@ -54,8 +54,8 @@ Page({
   items="{{ items }}"
   main-active-index="{{ mainActiveIndex }}"
   active-id="{{ activeId }}"
-  bind:click-nav="onClickNav"
-  bind:click-item="onClickItem"
+  onClick-nav="onClickNav"
+  onClick-item="onClickItem"
 />
 ```
 
@@ -99,8 +99,8 @@ Page({
 
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:click-nav | 左侧导航点击时，触发的事件 | event.detail.index：被点击的导航的索引 |
-| bind:click-item | 右侧选择项被点击时，会触发的事件 | event.detail: 该点击项的数据 |
+| onClick-nav | 左侧导航点击时，触发的事件 | event.detail.index：被点击的导航的索引 |
+| onClick-item | 右侧选择项被点击时，会触发的事件 | event.detail: 该点击项的数据 |
 
 ### items 数据结构
 `items` 整体为一个数组，数组内包含一系列描述分类的对象

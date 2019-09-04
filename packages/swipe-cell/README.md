@@ -27,7 +27,7 @@
 ### 异步关闭
 
 ```html
-<van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" left-width="{{ 65 }}" async-close bind:close="onClose">
+<van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" left-width="{{ 65 }}" async-close onClose="onClose">
   <view slot="left">选择</view>
   <van-cell-group>
     <van-cell title="单元格" value="内容" />

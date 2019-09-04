@@ -15,7 +15,7 @@
 ### 基础用法
 
 ```html
-<van-switch checked="{{ checked }}" bind:change="onChange" />
+<van-switch checked="{{ checked }}" onChange="onChange" />
 ```
 
 ```javascript
@@ -64,7 +64,7 @@ Page({
 ```html
 <van-switch
   checked="{{ checked }}"
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -106,7 +106,7 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:change | 开关状态切换回调 | event.detail: 是否选中开关 |
+| onChange | 开关状态切换回调 | event.detail: 是否选中开关 |
 
 ### 外部样式类
 

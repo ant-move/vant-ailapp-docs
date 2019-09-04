@@ -16,11 +16,11 @@
 通过`show`属性控制弹出层是否展示
 
 ```html
-<van-button type="primary" bind:click="showPopup">
+<van-button type="primary" onClick="showPopup">
   展示弹出层
 </van-button>
 
-<van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+<van-popup show="{{ show }}" onClose="onClose">内容</van-popup>
 ```
 
 ```javascript
@@ -48,7 +48,7 @@ Page({
   show="{{ show }}"
   position="top"
   style="height: 20%"
-  bind:close="onClose"
+  onClose="onClose"
 />
 ```
 
@@ -62,7 +62,7 @@ Page({
   round
   position="bottom"
   :style="{ height: '20%' }"
-  bind:close="onClose"
+  onClose="onClose"
 />
 ```
 
@@ -86,8 +86,8 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:close | 关闭弹出层时触发 | - |
-| bind:click-overlay | 点击遮罩层时触发 | - |
+| onClose | 关闭弹出层时触发 | - |
+| onClick-overlay | 点击遮罩层时触发 | - |
 | bind:transitionend | 弹出层动画结束后触发 | - |
 
 ### 外部样式类

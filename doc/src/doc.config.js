@@ -3,22 +3,22 @@ import packageJson from '../../package.json';
 import components from '../../example/config';
 const { version } = packageJson;
 
-export const github = 'https://github.com/youzan/vant-weapp';
+export const github = 'https://github.com/ant-move/Vant-Aliapp';
 
-export const versions = [version, '0.x'];
+export const versions = ['1.0.0'];
 
 export default {
   header: {
     logo: {
       image: 'https://img.yzcdn.cn/vant/logo.png',
-      title: 'Vant Weapp',
+      title: 'Vant Aliapp',
       href: '#/'
     },
     nav: {
       logoLink: [
         {
-          image: 'https://img.yzcdn.cn/vant/vant-o.svg',
-          url: '/vant'
+          image: 'https://ant-move.github.io/website/img/favicon.ico',
+          url: '/Antmove'
         },
         {
           image: 'https://img.yzcdn.cn/vant/logo/github.svg',

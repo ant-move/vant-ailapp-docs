@@ -20,7 +20,7 @@
     value="{{ value }}"
     placeholder="请输入用户名"
     border="{{ false }}"
-    bind:change="onChange"
+    onChange="onChange"
   />
 </van-cell-group>
 ```
@@ -50,7 +50,7 @@ Page({
     label="用户名"
     icon="question-o"
     placeholder="请输入用户名"
-    bind:click-icon="onClickIcon"
+    onClick-icon="onClickIcon"
   />
 
   <van-field
@@ -203,13 +203,13 @@ Page({
 
 | 事件 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:input | 输入内容时触发 | value: 当前输入值 |
-| bind:change | 输入内容时触发 | value: 当前输入值 |
-| bind:confirm | 点击完成按钮时触发 | value: 当前输入值 |
-| bind:click-icon | 点击尾部图标时触发 | - |
-| bind:focus | 输入框聚焦时触发 | event.detail.value: 当前输入值; <br>event.detail.height: 键盘高度(在基础库 1.9.90 起支持) |
-| bind:blur | 输入框失焦时触发 | event.detail.value: 当前输入值; <br>event.detail.cursor: 游标位置(如果 `type` 不为 `textarea`，值为 `0`) |
-| bind:clear | 点击清空控件时触发 | - |
+| onInput | 输入内容时触发 | value: 当前输入值 |
+| onChange | 输入内容时触发 | value: 当前输入值 |
+| onConfirm | 点击完成按钮时触发 | value: 当前输入值 |
+| onClick-icon | 点击尾部图标时触发 | - |
+| onFocus | 输入框聚焦时触发 | event.detail.value: 当前输入值; <br>event.detail.height: 键盘高度(在基础库 1.9.90 起支持) |
+| onBlur | 输入框失焦时触发 | event.detail.value: 当前输入值; <br>event.detail.cursor: 游标位置(如果 `type` 不为 `textarea`，值为 `0`) |
+| onClear | 点击清空控件时触发 | - |
 
 ### Slot
 

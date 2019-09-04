@@ -27,7 +27,7 @@
   value="{{ currentDate }}"
   min-date="{{ minDate }}"
   max-date="{{ maxDate }}"
-  bind:input="onInput"
+  onInput="onInput"
 />
 ```
 
@@ -57,7 +57,7 @@ Page({
 <van-datetime-picker
   type="date"
   value="{{ currentDate }}"
-  bind:input="onInput"
+  onInput="onInput"
   min-date="{{ minDate }}"
   formatter="{{ formatter }}"
 />
@@ -95,7 +95,7 @@ Page({
   type="year-month"
   value="{{ currentDate }}"
   min-date="{{ minDate }}"
-  bind:input="onInput"
+  onInput="onInput"
 />
 ```
 
@@ -124,7 +124,7 @@ Page({
   value="{{ currentDate }}"
   min-hour="{{ minHour }}"
   max-hour="{{ maxHour }}"
-  bind:input="onInput"
+  onInput="onInput"
 />
 ```
 

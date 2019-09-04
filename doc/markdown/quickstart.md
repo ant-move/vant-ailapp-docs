@@ -1,59 +1,72 @@
-# 快速上手
+<p align="center">
+  <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="120px" style="margin-bottom: 10px;width: 120px;">
+</p>
+<h3 align="center">轻量、可靠的小程序 UI 组件库</h3>
 
-### 背景知识
+## 介绍
+Vant Aliapp 是移动端 Vue 组件库 [Vant](https://github.com/youzan/vant) 的支付宝小程序版本，两者基于相同的视觉规范，提供一致的 API 接口，助力开发者快速搭建小程序应用。
 
-使用 Vant Weapp 前，请确保你已经学习过微信官方的 [小程序简易教程](https://mp.weixin.qq.com/debug/wxadoc/dev/) 和 [自定义组件介绍](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
+> Vant aliapp 通过 [Antmove](https://ant-move.github.io/website/) 小程序转换器基于 vant-weapp 转换得到，并做了少量的兼容适配调整。
+
+## 使用之前
+
+在开始使用 iView alipay 之前，你需要先阅读 [支付宝小程序自定义组件](https://docs.alipay.com/mini/framework/custom-component-overview) 的相关文档。
 
 ## 安装
 
-### 步骤一. 通过 npm 安装
+### 下载代码
 
+直接通过 git 下载 Vant Aliapp 源代码，并将`dist`目录拷贝到自己的项目中
 ```bash
-# 通过 npm 安装
-npm i vant-weapp -S --production
-
-# 通过 yarn 安装
-yarn add vant-weapp --production
+git clone https://github.com/ant-move/Vant-Aliapp.git
 ```
 
-### 步骤二. 构建 npm 包
+## 使用组件
 
-打开微信开发者工具，点击 **工具 -> 构建 npm**，并勾选 **使用 npm 模块** 选项，构建完成后，即可引入组件
-
-<img style="width: 500px;" src="https://img.yzcdn.cn/public_files/2019/08/15/fa0549210055976cb63798503611ce3d.png" />
-
-## 使用
-
-### 引入组件
-
-以 Button 组件为例，只需要在`app.json`或`index.json`中配置 Button 对应的路径即可。如果你是通过下载源代码的方式使用 vant-weapp，请将路径修改为项目中 vant-weapp 所在的目录。
+以按钮组件为例，只需要在 json 文件中引入按钮对应的自定义组件即可
 
 ```json
-// app.json
-"usingComponents": {
-  "van-button": "vant-weapp/button"
+{
+  "usingComponents": {
+    "van-button": "/path/to/vant-weapp/dist/button/index"
+  }
 }
 ```
 
-### 使用组件
+接着就可以在 axml 中直接使用组件
 
-引入组件后，可以在 wxml 中直接使用组件
-
-```xml
+```html
 <van-button type="primary">按钮</van-button>
 ```
 
-## 其他
+## 在开发者工具中预览
 
-### 在开发者工具中预览示例小程序
+下载本项目到本地，使用支付宝 IDE 打开 `alipay/vant-app` 即可预览。
 
-```bash
-# 安装项目依赖
-npm install
+> 预览时请在项目详情设置中开启 `component2` 编译，详情可参考[支付宝小程序自定义组件使用介绍](https://docs.alipay.com/mini/framework/custom-component-overview#%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5)。
 
-# 执行组件编译
-npm run dev
-  
-```
 
-接着打开微信开发者工具，导入`example`目录的项目就可以预览示例了。
+## 联系
+
+如果您在使用的过程中碰到问题，可以通过下面几个途径寻求帮助。
+
+* 钉钉微信交流群： <img width='200px' src='https://ant-move.github.io/website/img/contact-dingding.jpg' style='width: 150px;'/> <img width='200px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/02.JPG' style='width: 150px;'/>
+* 邮件：amap-appx@service.autonavi.com
+
+## 链接
+
+* [意见反馈](https://github.com/ant-move/Vant-Aliapp/issues)
+
+## 开源协议
+
+本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89)协议，请自由地享受和参与开源。
+
+[vant-weapp]: https://github.com/youzan/vant-weapp
+[MIT]: http://opensource.org/licenses/MIT
+[小程序简易教程]: https://mp.weixin.qq.com/debug/wxadoc/dev/
+[小程序框架介绍]: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html
+[微信开发者工具]: https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html
+
+## 感谢
+
+感谢 vant 团队对 vant-weapp 的贡献，本项目基于 iview-weapp 转换而来，并做了支付宝小程序平台的适配兼容。

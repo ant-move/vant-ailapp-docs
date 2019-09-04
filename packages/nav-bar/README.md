@@ -21,8 +21,8 @@
   left-text="返回"
   right-text="按钮"
   left-arrow
-  bind:click-left="onClickLeft"
-  bind:click-right="onClickRight"
+  onClick-left="onClickLeft"
+  onClick-right="onClickRight"
 />
 ```
 
@@ -72,8 +72,8 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:click-left | 点击左侧按钮时触发 | - |
-| bind:click-right | 点击右侧按钮时触发 | - |
+| onClick-left | 点击左侧按钮时触发 | - |
+| onClick-right | 点击右侧按钮时触发 | - |
 
 ### 外部样式类
 

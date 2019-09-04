@@ -21,7 +21,7 @@
 通过`value`设置输入值，可以通过`change`事件监听到输入值的变化
 
 ```html
-<van-stepper value="{{ 1 }}" bind:change="onChange" />
+<van-stepper value="{{ 1 }}" onChange="onChange" />
 ```
 
 ```js
@@ -72,7 +72,7 @@ Page({
 <van-stepper
   value="{{ value }}"
   async-change
-  bind:change="onChange"
+  onChange="onChange"
 />
 ```
 
@@ -126,12 +126,12 @@ Page({
 
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
-| bind:change | 当绑定值变化时触发的事件 | event.detail: 当前输入的值 |
-| bind:overlimit | 点击不可用的按钮时触发 | - |
-| bind:plus | 点击增加按钮时触发 | - |
-| bind:minus | 点击减少按钮时触发 | - |
-| bind:focus | 输入框聚焦时触发 | - |
-| bind:blur | 输入框失焦时触发 | - |
+| onChange | 当绑定值变化时触发的事件 | event.detail: 当前输入的值 |
+| onOverlimit | 点击不可用的按钮时触发 | - |
+| onP`lus | 点击增加按钮时触发 | - |
+| onMinus | 点击减少按钮时触发 | - |
+| onFocus | 输入框聚焦时触发 | - |
+| onBlur | 输入框失焦时触发 | - |
 
 ### 外部样式类
 
