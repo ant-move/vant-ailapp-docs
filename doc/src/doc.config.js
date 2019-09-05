@@ -5,7 +5,7 @@ const { version } = packageJson;
 
 export const github = 'https://github.com/ant-move/Vant-Aliapp';
 
-export const versions = ['1.0.0'];
+export const versions = ['1.0.3'];
 
 export default {
   header: {

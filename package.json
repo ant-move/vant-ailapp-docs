@@ -1,7 +1,7 @@
 {
   "name": "vant-weapp",
-  "version": "0.5.20",
-  "author": "youzan",
+  "version": "1.0.1",
+  "author": "amap-appx",
   "license": "MIT",
   "miniprogram": "dist",
   "description": "轻量、可靠的小程序 UI 组件库",
