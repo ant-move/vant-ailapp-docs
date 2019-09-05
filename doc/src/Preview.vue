@@ -3,15 +3,15 @@
     <img :class="['preview-image', `preview-image--${imageName}`]" :src="image">
     <div class="preview-popup">
       <div class="preview-content">
-        <img src="https://img.yzcdn.cn/vant-weapp/qrcode-201808101114.jpg">
-        <p>微信扫码体验</p>
+        <img style="height: auto;" src="https://cache.amap.com/ecology/tool/antmove/web/assets/qr/qr.jpg">
+        <p>支付宝扫码体验</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-const PREFIX = 'https://img.yzcdn.cn/vant-weapp/';
+const PREFIX = 'https://cache.amap.com/ecology/tool/antmove/web/assets/dashboard.png';
 const MAP = {
   index: 'index-20190715.png',
   transition: 'transition-20180821.png'
@@ -23,7 +23,7 @@ export default {
       return location.hash.slice(1);
     },
     image() {
-      return PREFIX + (MAP[this.imageName] || MAP.index);
+      return PREFIX;  // + (MAP[this.imageName] || MAP.index);
     }
   }
 };
