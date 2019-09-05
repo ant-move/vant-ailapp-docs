@@ -62,7 +62,7 @@ git clone https://github.com/ant-move/Vant-Aliapp.git
 
 ## 预览
 
-<img width='200' src='https://cache.amap.com/ecology/tool/antmove/web/assets/dashboard.png'/>
+<img width='200' style='width: 200px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/dashboard.png'/>
 
 ## 在开发者工具中预览
 
@@ -75,7 +75,7 @@ git clone https://github.com/ant-move/Vant-Aliapp.git
 
 如果您在使用的过程中碰到问题，可以通过下面几个途径寻求帮助。
 
-* 钉钉微信交流群： <img width='200px' src='https://ant-move.github.io/website/img/contact-dingding.jpg'/> <img width='200px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/02.JPG'/>
+* 钉钉微信交流群： <img style='width: 200px' width='200px' src='https://ant-move.github.io/website/img/contact-dingding.jpg'/> <img style='width: 200px' width='200px' src='https://cache.amap.com/ecology/tool/antmove/web/assets/02.JPG'/>
 * 邮件：amap-appx@service.autonavi.com
 
 ## 链接
