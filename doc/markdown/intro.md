@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="120" style="margin-bottom: 10px;">
+  <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="120" style="margin-bottom: 10px;width: 120px;">
 </p>
 <h3 align="center">轻量、可靠的小程序 UI 组件库</h3>
 
