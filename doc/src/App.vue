@@ -37,9 +37,9 @@ export default {
     simulator() {
       const { path } = this.$route.meta;
 
-      if (!UNSHARED.includes(path)) {
-        return `/vant/mobile.html?hide_nav=1&weapp=1#/zh-CN/${path}`;
-      }
+      // if (!UNSHARED.includes(path)) {
+      //   return `/vant/mobile.html?hide_nav=1&weapp=1#/zh-CN/${path}`;
+      // }
 
       return `./preview.html#${path}`;
     }
